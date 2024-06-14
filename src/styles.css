@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sigmar+One");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Nunito";
+}
+
+body {
+  background: whitesmoke;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: whitesmoke;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 350px;
+  border-radius: 25px;
+  border: 5px solid #272926;
+  margin: 50px;
+  background: #191e17;
+}
+
+.Card small {
+  padding-top: 15px;
+  color: #dfdfdf;
+}
+
+.Card h1 {
+  color: #dfdfdf;
+  text-transform: capitalize;
+}
+
+.Card img {
+  height: 200px;
+  width: 200px;
+}
+
+.Card:hover {
+  animation: selectCard 0.8s ease-in-out;
+}
+
+@keyframes selectCard {
+  0% {
+    transform: translateY(-0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+    box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  100% {
+    transform: translateY(-0px);
+  }
+}
+
+.Title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 30px;
+}
+
+form input,
+label,
+button {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+form h1 {
+  width: 300px;
+}
+
+form input {
+  border: none;
+  width: 350px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
